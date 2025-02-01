@@ -3,19 +3,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Array of testimonial objects, each containing a quote, rating, and name. This is done so more can be added later or easily hooked into a database
   const testimonials = [
     {
-      quote: "“Ivy was able to capture our products in a unique way that we have not seen by a photographer in a while. Highly recommend working with this professional young freelance photographer”",
+      quote: "“From the drive up the beach to the house itself everything is perfect!  You really get a sense of being away from everything despite being a short drive from the town of Noosa.  Will definitely be back and really want to spend a week or more there next time.”",
       rating: 5,
-      name: "Petr - Unique Boutique",
+      name: "Dave Hemingway - Facebook",
     },
     {
-      quote: "“Working with Ivy was a fantastic experience. Her creative vision and attention to detail brought our products to life in ways we never imagined.”",
+      quote: "“What a beautiful place. Around 6km North from the camping ground via the beach. We didn't need to lower our tyre pressure as the driving surface was firm. Telstra coverage is ok. House has everything you need. We'll be back for sure. 2 rooms upstairs with bathroom and 2 rooms downstairs with second bathroom. Privacy for 2 families easy. Love it ❤”",
       rating: 4,
-      name: "Alex - Trendy Fashion Co.",
+      name: "Jo McLean - Google Review",
     },
     {
-      quote: "“Ivy's photography skills are exceptional. She managed to capture the essence of our brand perfectly. We will definitely work with her again.”",
+      quote: "“Very Nice.”",
       rating: 5,
-      name: "Morgan - Elegant Essentials",
+      name: "Dan Buzer - Google Review",
     },
   ];
 

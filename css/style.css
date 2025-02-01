@@ -7,7 +7,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     background: var(--light-grey);
     background-image: url(../images/background-image.avif);
     background-position: center;
@@ -23,12 +23,13 @@ a {
 
 /* ==========COLOURS============= */
 :root {
-    --light-pink: #F2D5E0;
-    --dark-olive: #54592F;
-    --muted-olive: #8A8C4F;
+    --light-aqua: #7FB8BC;
+    --bright-aqua: #66C4C8;
+    --dark-aqua: #138496;
     --light-grey: #D9D9D9;
     --warm-grey: #B0ACA6;
-    --deep-charcoal: #2B2626;
+    --deep-brown: #312401;
+    --white: #FFFFFF;
     --transparent-white: rgba(255, 255, 255, 0.4);
 }
 
@@ -47,25 +48,39 @@ a {
     font-style: normal;
 }
 
-.open-sans-text {
-    font-family: "Open Sans", sans-serif;
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-text {
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-.open-sans-mid {
-    font-family: "Open Sans", sans-serif;
+.lato-mid {
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
 
-.open-sans-bold {
-    font-family: "Open Sans", sans-serif;
+.lato-bold {
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+}
+
+.lato-italic {
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
 }
 
 h1 {
@@ -81,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -92,22 +107,22 @@ a,
 textarea,
 input,
 button {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     transition: color 0.3s ease;
     font-size: 1.125rem;
-    color: var(--deep-charcoal);
+    color: var(--deep-brown);
 }
 
 a:hover {
-    color: var(--dark-olive);
+    color: var(--dark-aqua);
     transition: 0.3s ease;
 }
 
 a:active {
-    color: var(--dark-olive);
+    color: var(--dark-aqua);
 }
 
 /* ==========HEADER============= */
@@ -125,7 +140,7 @@ header {
 /* ==========LOGO============= */
 
 #logo {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
@@ -140,7 +155,7 @@ nav {
 
 #nav-menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -159,7 +174,7 @@ nav a {
 /* Coloured nav for navcolour.js */
 .nav-colour {
     background-image: url(../images/nav-background.webp);
-    background-size: cover;
+    background-size: contain;
     box-shadow: 0px 10px 20px -4px rgba(0, 0, 0, 0.5);
 }
 
@@ -171,6 +186,7 @@ nav a {
 
 .nav-item a {
     text-decoration: none;
+    color: var(--white);
 }
 
 /* Nav animation styling */
@@ -180,7 +196,7 @@ nav a {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: var(--dark-olive);
+    background-color: var(--white);
     bottom: 0;
     /* Transformation for the underline */
     transition: width 0.3s ease-out;
@@ -207,7 +223,7 @@ nav a {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--deep-charcoal);
+    color: var(--white);
 }
 
 #back-arrow {
@@ -421,7 +437,7 @@ nav a {
 }
 
 .main-section-rating i {
-    color: var(--muted-olive);
+    color: var(--bright-aqua);
     padding: 0px 10px;
 }
 
@@ -456,7 +472,7 @@ nav a {
     width: 100px;
     height: 4px;
     border-radius: 20px;
-    border: 1px solid var(--dark-olive);
+    border: 1px solid var(--dark-aqua);
     position: relative;
     overflow: hidden;
 }
@@ -466,7 +482,7 @@ nav a {
     position: absolute;
     width: 100px;
     height: 4px;
-    background-color: var(--dark-olive);
+    background-color: var(--dark-aqua);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 2s linear;
@@ -486,17 +502,17 @@ textarea {
 }
 
 button {
-    background-color: var(--dark-olive);
+    background-color: var(--bright-aqua);
     color: white;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 button:hover {
-    background-color: var(--muted-olive);
+    background-color: var(--dark-aqua);
 }
 
 .input-icon-container {
@@ -529,7 +545,7 @@ textarea {
 
 .spinner {
     border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: var(--dark-olive);
+    border-left-color: var(--bright-aqua);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -543,7 +559,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--light-pink);
+    background-color: var(--light-aqua);
     background-image: url(../images/footer-background.webp);
     background-size: cover;
     box-shadow: 5px 0px 20px -4px rgba(0, 0, 0, 0.25);
@@ -574,6 +590,7 @@ footer {
 
 #footer-content div>* {
     padding: 10px 20px;
+    color: var(--white);
 }
 
 .footer-social-links>* {
@@ -588,6 +605,7 @@ footer {
 #footer-disclaimer p {
     font-style: italic;
     font-size: 0.75rem;
+    color: var(--white);
 }
 
 /* ==========RESPONSIVE DESIGN============= */
@@ -841,7 +859,7 @@ footer {
     .main-section-rating,
     .main-section-rating i {
         justify-content: center;
-        color: var(--light-pink);
+        color: var(--light-aqua);
     }
 
     textarea {
@@ -854,11 +872,11 @@ footer {
     }
 
     #loading-bar-outer {
-        border-color: var(--light-pink);
+        border-color: var(--light-aqua);
     }
 
     #loading-bar-inner {
-        background-color: var(--light-pink);
+        background-color: var(--light-aqua);
     }
 
     .footer-social-links {

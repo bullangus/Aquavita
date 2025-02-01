@@ -5,56 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ivy Mae Photography</title>
+    <title>Aquavita at Teewah Beach</title>
 
     <!-- Metadata of the site -->
-    <meta name="author" content="Angus Dobson">
-    <meta name="description"
-        content="Explore Ivy Mae's stunning photography portfolio, showcasing her unique style and creative vision. Specializing in fashion, editorial, and portrait photography.">
-    <meta name="keywords"
-        content="photography, Ivy Mae, portfolio, fashion, editorial, portrait, photographer, creative vision">
+    <meta name="author" content="Angus Field">
+    <meta name="description" 
+        content="Discover Aquavita, a beautifully renovated beachfront home in Teewah Beach. Featuring four spacious bedrooms, two elegant bathrooms, a wrap-around balcony with ocean views, and luxury amenities including a hammock and BBQ. Perfect for swimming, surfing, and relaxation.">
+    <meta name="keywords" 
+        content="Aquavita, Teewah Beach, beachfront home, luxury accommodation, vacation rental, ocean views, surfing, swimming, fishing, outdoor dining, holiday home, coastal retreat">
 
     <!-- Preload and set the stylesheet -->
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Set the tab icon -->
-    <link id="favicon" rel="icon" href="images/icon.webp">
+    <link id="favicon" rel="icon" href="images/icon.ico">
 
     <!-- Preload Logo -->
     <link rel="preload" href="images/logo.webp" as="image">
     <link rel="preload" href="images/logo-small.webp" as="image">
 
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Preload Google Fonts -->
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        as="style">
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        as="style">
-
-    <!-- Asynchronously load Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
-
-    <noscript>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet">
-    </noscript>
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/qyo7ntu.css">
 
     <!-- Load all the javascript files, these have been seperated to keep the coding modular -->
     <script src="js/smoothscroll.js" defer></script>
     <script src="js/navcolour.js" defer></script>
-    <script src="js/contactform.js" defer></script>
     <script src="js/testimonials.js" defer></script>
     <script src="js/hamburgermenu.js" defer></script>
 
@@ -77,16 +53,16 @@
         <nav id="nav-menu">
             <!-- Nav items -->
             <div class="nav-item">
-                <a href="#gallery" class="open-sans-text smooth-scroll">GALLERY</a>
+                <a href="#gallery" class="lato-light smooth-scroll">GALLERY</a>
             </div>
             <div class="nav-item">
-                <a href="#about" class="open-sans-text smooth-scroll">ABOUT</a>
+                <a href="#about" class="lato-light smooth-scroll">ABOUT</a>
             </div>
             <div class="nav-item">
-                <a href="#testimonials" class="open-sans-text smooth-scroll">TESTIMONIALS</a>
+                <a href="#testimonials" class="lato-light smooth-scroll">TESTIMONIALS</a>
             </div>
             <div class="nav-item">
-                <a href="#contact" class="open-sans-text smooth-scroll">CONTACT</a>
+                <a href="#contact" class="lato-light smooth-scroll">BOOK</a>
             </div>
             <!-- Back arrow icon -->
             <div id="back-arrow" class="fa-solid fa-arrow-left"></div>
@@ -100,17 +76,17 @@
         <div class="hero-image-section">
             <img src="images/hero-1.avif"
                 alt="Hero image of skincare products displayed on a white surface with a pink background.">
-            <div class="hero-text playfair-display-text">PRODUCT</div>
+            <div class="hero-text lato-italic">Chill</div>
         </div>
         <div class="hero-image-section">
             <img src="images/hero-2.avif" loading="lazy"
                 alt="Hero image of woman's wrist wearing a stylish watch, her hand resting near her face.">
-            <div class="hero-text playfair-display-text">FASHION</div>
+            <div class="hero-text lato-italic">Unwind</div>
         </div>
         <div class="hero-image-section">
             <img src="images/hero-3.avif" loading="lazy"
                 alt="Hero image of skincare products and a crystal on a pink surface with a wooden block.">
-            <div class="hero-text playfair-display-text">EDITORIAL</div>
+            <div class="hero-text lato-italic">Relax</div>
         </div>
     </section>
 
@@ -128,7 +104,7 @@
         <div class="gallery-item">
             <img src="images/gallery/gallery-5.avif" loading="lazy"
                 alt="Woman's wrist wearing a stylish watch, her hand resting near her face.">
-            <div class="gallery-text playfair-display-text">GALLERY</div>
+            <div class="gallery-text lato-italic">Gallery</div>
         </div>
         <img src="images/gallery/gallery-6.avif" loading="lazy"
             alt="Skincare products and a crystal on a pink surface with a wooden block.">
@@ -149,12 +125,11 @@
                     alt="Close-up of a woman with braided hair and winged eyeliner, vibrant red and purple earrings, with her eyes closed and face bathed in sunlight.">
             </div>
             <div class="main-section-text">
-                <h1>About Ivy Mae Photography</h1>
-                <p>Ivy Mae Photography is the new photography business of Ivy Chapel. Ivy recently graduated with a
-                    Bachelor of Arts in Photography and Illustration, but her style speaks volumes to her experience.
-                    Ivy has worked on as part of a number of freelance projects, and is looking to work on more
-                    professional projects in the fashion and editorial photography business, with a keen interest in
-                    portraiture.</p>
+                <h1>About Aquavita</h1>
+                <p>Freshly renovated, this stunning two-story beachfront home features four spacious, well-lit bedrooms and two vibrant bathrooms, all tastefully decorated.</p>
+                <p>The upper level is adorned with sliding glass doors that lead to an expansive wrap-around balcony equipped with a luxury hammock and a high-end stainless steel BBQ for gourmet outdoor dining.</p>
+                <p>Enjoy the sounds of the ocean waves with a drink in hand, or take a short walk to the glorious Teewah Beach for swimming, surfing, fishing, or simply relaxing. From the moment you arrive, excitement is just steps away from your front door.</p>
+                <p>Aquavita, the first house you encounter upon entering Teewah, is a place you'll find hard to leave.</p>
             </div>
         </div>
     </section>
@@ -164,11 +139,9 @@
     <section id="testimonials" class="main-section">
         <div class="main-section-content">
             <div class="main-section-text">
-                <h1>Testimonials</h1>
+                <h1>Reviews</h1>
                 <div class="testimonial-content">
-                    <p id="testimonial-quote">“Ivy was able to capture our products in a unique way that we have not
-                        seen by a photographer in a while. Highly recommend working with this professional young
-                        freelance photographer”</p>
+                    <p id="testimonial-quote">“From the drive up the beach to the house itself everything is perfect!  You really get a sense of being away from everything despite being a short drive from the town of Noosa.  Will definitely be back and really want to spend a week or more there next time.”</p>
                     <div id="testimonial-rating" class="main-section-rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -176,7 +149,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p id="testimonial-name">Petr - Unique Boutique</p>
+                    <p id="testimonial-name">Dave Hemingway - Facebook</p>
                     <div class="loading-bar-container">
                         <div id="loading-bar-outer">
                             <div id="loading-bar-inner"></div>
@@ -200,14 +173,15 @@
                     alt="Close-up of a woman's ear with gold geometric earrings, staring off to the distance.">
             </div>
             <div class="main-section-text">
-                <h1>Contact Ivy</h1>
+                <h1>Book Now</h1>
                 <form action="#" method="post" id="contact-form">
-                    <div class="input-icon-container">
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
-                    <button type="submit" class="open-sans-mid">Send</button>
+                    <p>
+                        Ready to experience the beauty of Aquavita at Teewah Beach? Booking is easy! 
+                        Click the link below to check availability and secure your stay. You’ll be 
+                        redirected to our official booking page at Teewah Beach Escapes.
+                    </p>
+                    <button type="submit" class="lato-mid" formaction="https://www.teewahbeachescapes.com.au/accommodation/aquavita/">
+                        Book Your Stay at Aquavita</button>
                 </form>
                 <div class="loading-spinner" style="display:none;">
                     <div class="spinner"></div>
@@ -227,32 +201,21 @@
             </a>
             <section id="footer-content">
                 <div>
-                    <a href="#gallery" class="open-sans-text smooth-scroll">GALLERY</a>
-                    <a href="#about" class="open-sans-text smooth-scroll">ABOUT</a>
-                    <a href="#testimonials" class="open-sans-text smooth-scroll">TESTIMONIALS</a>
-                    <a href="#contact" class="open-sans-text smooth-scroll">CONTACT</a>
-                </div>
-                <div>
-                    <a href="#" class="open-sans-text">Terms</a>
-                    <a href="#" class="open-sans-text">Privacy</a>
-                    <a href="#" class="open-sans-text">Cookies</a>
+                    <a href="#gallery" class="lato-light smooth-scroll">GALLERY</a>
+                    <a href="#about" class="lato-light smooth-scroll">ABOUT</a>
+                    <a href="#testimonials" class="lato-light smooth-scroll">TESTIMONIALS</a>
+                    <a href="#contact" class="lato-light smooth-scroll">BOOK</a>
                 </div>
             </section>
             <div class="footer-social-links">
                 <!-- Link to the facebook -->
-                <a href="#facebook"><img src="images/facebook.webp" loading="lazy" alt="Facebook"></a>
-                <!-- Link to the instagram -->
-                <a href="#instagram"><img src="images/instagram.webp" loading="lazy" alt="Instagram"></a>
-                <!-- Link to the tiktok -->
-                <a href="#tiktok"><img src="images/tiktok.webp" loading="lazy" alt="Tiktok"></a>
+                <a href="https://www.facebook.com/aquavitateewah"><img src="images/facebook.webp" loading="lazy" alt="Facebook"></a>
             </div>
         </div>
         <div id="footer-disclaimer">
-            <p>This website has been created as part of an assignment in an approved course of study for Curtin
-                University and contains copyright material not created by the author. All copyright material used
-                remains copyright of the respective owners and has been used here pursuant to Section 40 of the
-                Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent
-                of the original copyright owners. See code comments for references.</p>
+            <p>This website is the official online presence of Aquavita at Teewah Beach. All content, including images and text, 
+                is the property of Aquavita or its respective owners and is used with permission. Unauthorized reproduction or 
+                distribution of any material on this site is prohibited. For inquiries regarding content usage, please contact us directly.</p>
         </div>
     </footer>
 </body>
