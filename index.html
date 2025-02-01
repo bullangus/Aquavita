@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aquavita at Teewah Beach</title>
+    <title>Book Your Stay at Aquavita - Luxury Beachfront Home at Teewah Beach</title>
 
     <!-- Metadata of the site -->
     <meta name="author" content="Angus Field">
@@ -13,6 +13,93 @@
         content="Discover Aquavita, a beautifully renovated beachfront home in Teewah Beach. Featuring four spacious bedrooms, two elegant bathrooms, a wrap-around balcony with ocean views, and luxury amenities including a hammock and BBQ. Perfect for swimming, surfing, and relaxation.">
     <meta name="keywords" 
         content="Aquavita, Teewah Beach, beachfront home, luxury accommodation, vacation rental, ocean views, surfing, swimming, fishing, outdoor dining, holiday home, coastal retreat">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LodgingBusiness",
+            "name": "Aquavita at Teewah Beach",
+            "image": [
+            "https://www.teewahbeachescapes.com.au/images/aquavita/hero-1.jpg",
+            "https://www.teewahbeachescapes.com.au/images/aquavita/hero-2.jpg",
+            "https://www.teewahbeachescapes.com.au/images/aquavita/gallery-1.jpg"
+            ],
+            "description": "Aquavita is a beautifully renovated two-story beachfront home in Teewah Beach, featuring four spacious bedrooms, two elegant bathrooms, and a wrap-around balcony with ocean views. Amenities include a luxury hammock and a high-end stainless steel BBQ, perfect for swimming, surfing, fishing, and relaxation.",
+            "url": "https://www.teewahbeachescapes.com.au/accommodation/aquavita/",
+            "telephone": "+61 438 451 715",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "24 The Esplanade",
+            "addressLocality": "Teewah",
+            "addressRegion": "QLD",
+            "postalCode": "4565",
+            "addressCountry": "AU"
+            },
+            "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -26.261,
+            "longitude": 153.095
+            },
+            "priceRange": "$$$",
+            "amenityFeature": [
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Beachfront",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Ocean View",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Luxury Hammock",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Stainless Steel BBQ",
+                "value": true
+            }
+            ],
+            "checkinTime": "14:00",
+            "checkoutTime": "10:00",
+            "petsAllowed": false,
+            "smokingAllowed": false,
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+61 438 451 715",
+            "contactType": "Reservations",
+            "areaServed": "AU",
+            "availableLanguage": "English"
+            },
+            "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1590"
+            },
+            "review": [
+            {
+                "@type": "Review",
+                "author": {
+                "@type": "Person",
+                "name": "Dave Hemingway"
+                },
+                "datePublished": "2024-01-15",
+                "reviewBody": "From the drive up the beach to the house itself, everything is perfect! You really get a sense of being away from everything despite being a short drive from the town of Noosa. Will definitely be back and really want to spend a week or more there next time.",
+                "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+                }
+            }
+            ],
+            "sameAs": [
+            "https://www.facebook.com/aquavitateewah/"
+            ]
+        }
+    </script>
 
     <!-- Preload and set the stylesheet -->
     <link rel="preload" href="css/style.css" as="style">
@@ -26,7 +113,7 @@
     <link rel="preload" href="images/logo-small.webp" as="image">
 
     <!-- Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/qyo7ntu.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qyo7ntu.css" as="font" crossorigin="anonymous">
 
     <!-- Load all the javascript files, these have been seperated to keep the coding modular -->
     <script src="js/smoothscroll.js" defer></script>
