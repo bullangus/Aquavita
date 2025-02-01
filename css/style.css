@@ -739,13 +739,13 @@ footer {
 
     #footer-main {
         height: 250px;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
 
     #footer-content {
-        height: 65%;
         justify-content: space-between;
+        margin-bottom: 10px;
     }
 
     #footer-content div>* {
@@ -755,13 +755,6 @@ footer {
     .footer-social-links {
         display: flex;
         justify-content: center;
-        position: relative;
-        left: -150px;
-    }
-
-    footer #logo {
-        position: relative;
-        left: 150px;
     }
 
     .footer-social-links a img {
@@ -883,13 +876,6 @@ footer {
     .footer-social-links {
         display: flex;
         justify-content: center;
-        position: relative;
-        left: -50px;
-    }
-
-    footer #logo {
-        position: relative;
-        left: 50px;
     }
 }
 
